@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CircularProgressView: View {
-    private let scaleEffectValue : Double = 2.0
+    private let scaleEffectValue : Double = 1.5
     
     var body: some View {
         ProgressView()

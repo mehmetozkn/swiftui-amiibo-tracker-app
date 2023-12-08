@@ -7,6 +7,17 @@
 
 import Foundation
 
-struct AmiiboModel {
-    
+struct AmiiboModel: Codable {
+    let amiiboSeries: String?
+    let character: String?
+    let gameSeries: String?
+    let head: String?
+    let image: String?
+    let name: String?
+    let tail: String?
+    let type: String?
+}
+
+struct AmiiboResponse: Codable {
+    let amiibo: [AmiiboModel]
 }

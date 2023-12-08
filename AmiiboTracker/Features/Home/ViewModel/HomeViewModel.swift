@@ -7,6 +7,23 @@
 
 import Foundation
 
-class HomeViewModel {
+class HomeViewModel : ObservableObject {
+    private let service : HomeService
+
+    @Published var isLoading : Bool = false
+    @Published var amiibos : [AmiiboModel]?
     
+    init(service: HomeService) {
+        self.service = service
+    }
+        
+    @MainActor
+     func getAmiiboos() async {
+        do {
+            self.amiibos = try await service.fetchAmiibos()
+            self.isLoading = true
+        } catch {
+            
+        }
+    }
 }

@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85911FC82B23B41000187AE2 /* AmiiboDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85911FC72B23B41000187AE2 /* AmiiboDetailService.swift */; };
+		85911FCB2B23B42600187AE2 /* AmiiboViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85911FCA2B23B42600187AE2 /* AmiiboViewModel.swift */; };
+		85911FCF2B23B43F00187AE2 /* AmiiboDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85911FCE2B23B43F00187AE2 /* AmiiboDetailModel.swift */; };
+		85911FD12B23B44A00187AE2 /* AmiiboDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85911FD02B23B44A00187AE2 /* AmiiboDetailView.swift */; };
 		85ABA5382B2271C400B60D58 /* AmiiboTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ABA5372B2271C400B60D58 /* AmiiboTrackerApp.swift */; };
 		85ABA53A2B2271C400B60D58 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ABA5392B2271C400B60D58 /* HomeView.swift */; };
 		85ABA53C2B2271C600B60D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85ABA53B2B2271C600B60D58 /* Assets.xcassets */; };
 		85ABA53F2B2271C600B60D58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85ABA53E2B2271C600B60D58 /* Preview Assets.xcassets */; };
 		85ABA54C2B22752300B60D58 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ABA54B2B22752300B60D58 /* ViewExtension.swift */; };
 		85ABA54E2B22758D00B60D58 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ABA54D2B22758D00B60D58 /* CircularProgressView.swift */; };
+		85AC432D2B2363D500A2729C /* HttpPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AC432C2B2363D500A2729C /* HttpPaths.swift */; };
+		85AC43302B236C2300A2729C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AC432F2B236C2300A2729C /* NetworkError.swift */; };
+		85AC43332B23783000A2729C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 85AC43322B23783000A2729C /* Alamofire */; };
+		85AC43362B23783D00A2729C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 85AC43352B23783D00A2729C /* Kingfisher */; };
 		85E7D0DD2B2278BA00448520 /* AmiiboModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E7D0DC2B2278BA00448520 /* AmiiboModel.swift */; };
 		85E7D0DF2B227A6800448520 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E7D0DE2B227A6800448520 /* HomeViewModel.swift */; };
 		85E7D0E12B227A7200448520 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E7D0E02B227A7200448520 /* HomeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85911FC72B23B41000187AE2 /* AmiiboDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboDetailService.swift; sourceTree = "<group>"; };
+		85911FCA2B23B42600187AE2 /* AmiiboViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboViewModel.swift; sourceTree = "<group>"; };
+		85911FCE2B23B43F00187AE2 /* AmiiboDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboDetailModel.swift; sourceTree = "<group>"; };
+		85911FD02B23B44A00187AE2 /* AmiiboDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboDetailView.swift; sourceTree = "<group>"; };
 		85ABA5342B2271C400B60D58 /* AmiiboTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmiiboTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85ABA5372B2271C400B60D58 /* AmiiboTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboTrackerApp.swift; sourceTree = "<group>"; };
 		85ABA5392B2271C400B60D58 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -26,6 +38,8 @@
 		85ABA53E2B2271C600B60D58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		85ABA54B2B22752300B60D58 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		85ABA54D2B22758D00B60D58 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		85AC432C2B2363D500A2729C /* HttpPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPaths.swift; sourceTree = "<group>"; };
+		85AC432F2B236C2300A2729C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		85E7D0DC2B2278BA00448520 /* AmiiboModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboModel.swift; sourceTree = "<group>"; };
 		85E7D0DE2B227A6800448520 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		85E7D0E02B227A7200448520 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
@@ -36,12 +50,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85AC43362B23783D00A2729C /* Kingfisher in Frameworks */,
+				85AC43332B23783000A2729C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85911FC12B23B3C900187AE2 /* AmiiboDetail */ = {
+			isa = PBXGroup;
+			children = (
+				85911FC52B23B3E500187AE2 /* Model */,
+				85911FC42B23B3E100187AE2 /* View */,
+				85911FC32B23B3DD00187AE2 /* ViewModel */,
+				85911FC22B23B3D700187AE2 /* Service */,
+			);
+			path = AmiiboDetail;
+			sourceTree = "<group>";
+		};
+		85911FC22B23B3D700187AE2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				85911FC72B23B41000187AE2 /* AmiiboDetailService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		85911FC32B23B3DD00187AE2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				85911FCA2B23B42600187AE2 /* AmiiboViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		85911FC42B23B3E100187AE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85911FD02B23B44A00187AE2 /* AmiiboDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85911FC52B23B3E500187AE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85911FCE2B23B43F00187AE2 /* AmiiboDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		85ABA52B2B2271C400B60D58 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +140,7 @@
 		85ABA5452B22726F00B60D58 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				85AC432E2B236AEF00A2729C /* Exceptions */,
 				85ABA5492B22736D00B60D58 /* Constants */,
 				85ABA5482B22735D00B60D58 /* Extensions */,
 				85ABA5472B22728000B60D58 /* Components */,
@@ -91,6 +151,7 @@
 		85ABA5462B22727500B60D58 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				85911FC12B23B3C900187AE2 /* AmiiboDetail */,
 				85ABA54A2B22739300B60D58 /* Home */,
 			);
 			path = Features;
@@ -115,6 +176,7 @@
 		85ABA5492B22736D00B60D58 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				85AC432C2B2363D500A2729C /* HttpPaths.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -128,6 +190,14 @@
 				85E7D0D82B22789500448520 /* Service */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		85AC432E2B236AEF00A2729C /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				85AC432F2B236C2300A2729C /* NetworkError.swift */,
+			);
+			path = Exceptions;
 			sourceTree = "<group>";
 		};
 		85E7D0D82B22789500448520 /* Service */ = {
@@ -178,6 +248,10 @@
 			dependencies = (
 			);
 			name = AmiiboTracker;
+			packageProductDependencies = (
+				85AC43322B23783000A2729C /* Alamofire */,
+				85AC43352B23783D00A2729C /* Kingfisher */,
+			);
 			productName = AmiiboTracker;
 			productReference = 85ABA5342B2271C400B60D58 /* AmiiboTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -206,6 +280,10 @@
 				Base,
 			);
 			mainGroup = 85ABA52B2B2271C400B60D58;
+			packageReferences = (
+				85AC43312B23782F00A2729C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				85AC43342B23783D00A2729C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 85ABA5352B2271C400B60D58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,12 +311,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				85E7D0E12B227A7200448520 /* HomeService.swift in Sources */,
+				85911FCF2B23B43F00187AE2 /* AmiiboDetailModel.swift in Sources */,
+				85911FCB2B23B42600187AE2 /* AmiiboViewModel.swift in Sources */,
 				85ABA54C2B22752300B60D58 /* ViewExtension.swift in Sources */,
+				85AC432D2B2363D500A2729C /* HttpPaths.swift in Sources */,
+				85911FC82B23B41000187AE2 /* AmiiboDetailService.swift in Sources */,
 				85E7D0DF2B227A6800448520 /* HomeViewModel.swift in Sources */,
 				85ABA53A2B2271C400B60D58 /* HomeView.swift in Sources */,
 				85ABA54E2B22758D00B60D58 /* CircularProgressView.swift in Sources */,
+				85AC43302B236C2300A2729C /* NetworkError.swift in Sources */,
 				85ABA5382B2271C400B60D58 /* AmiiboTrackerApp.swift in Sources */,
 				85E7D0DD2B2278BA00448520 /* AmiiboModel.swift in Sources */,
+				85911FD12B23B44A00187AE2 /* AmiiboDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +528,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		85AC43312B23782F00A2729C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		85AC43342B23783D00A2729C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85AC43322B23783000A2729C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85AC43312B23782F00A2729C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		85AC43352B23783D00A2729C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85AC43342B23783D00A2729C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 85ABA52C2B2271C400B60D58 /* Project object */;
 }

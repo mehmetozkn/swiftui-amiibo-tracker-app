@@ -8,17 +8,32 @@
 import SwiftUI
 
 struct HomeView: View {
+    @ObservedObject var viewModel: HomeViewModel
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                if viewModel.isLoading {
+                    VStack {
+                        List(viewModel.amiibos ?? [], id: \.name) { amiibo in
+                            NavigationLink(destination: AmiiboDetailView(amiiboName: amiibo.name ?? "")) {
+                                Text(amiibo.name ?? "No Name")
+                            }
+                        }
+
+                    }
+                    .navigationTitle("Amiibos")
+                } else {
+                    CircularProgressView()
+                }
+            }
         }
-        .padding()
+            .task {
+            await viewModel.getAmiiboos()
+        }
     }
 }
 
 #Preview {
-    HomeView()
+    HomeView(viewModel: HomeViewModel(service: HomeService()))
 }

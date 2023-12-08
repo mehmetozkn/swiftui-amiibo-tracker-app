@@ -11,7 +11,7 @@ import SwiftUI
 struct AmiiboTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            HomeView(viewModel: HomeViewModel(service: HomeService()))
         }
     }
 }
