@@ -18,4 +18,6 @@ struct AppConstants {
         static let cornerRadiusValue : CGFloat = 12
 
     }
+    
+    
 }

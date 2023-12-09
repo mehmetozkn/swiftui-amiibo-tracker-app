@@ -24,7 +24,7 @@ struct HomeView: View {
                 if viewModel.isLoading {
                     VStack {
                         List(viewModel.amiibos ?? [], id: \.name) { amiibo in
-                            NavigationLink(destination: AmiiboDetailView(amiiboName: amiibo.name ?? "")) {
+                            NavigationLink(destination: AmiiboDetailView(amiibo: amiibo.name ?? "")) {
                                 HStack {
                                     AmiiboImageView(imageUrl: amiibo.image ?? "" ,width: imageWidthSize, height: imageHeightSize)
                                 
