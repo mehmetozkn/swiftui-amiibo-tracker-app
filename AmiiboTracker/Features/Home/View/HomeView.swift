@@ -32,7 +32,6 @@ struct HomeView: View {
 
                                     Spacer()
                                 }
-
                             }
                         }
                         Spacer()
@@ -46,6 +45,17 @@ struct HomeView: View {
             .task {
             await viewModel.getAmiiboos()
         }
+            .alert(isPresented: Binding(
+                get: { viewModel.showAlert },
+                set: { _ in }
+            )) {
+                Alert(
+                    title: Text(AppConstants.LocaleKeys.error),
+                    message: Text(AppConstants.LocaleKeys.tryAgain),
+                    dismissButton: .default(Text(AppConstants.LocaleKeys.okey)) {
+                    }
+                )
+            }
     }
 }
 

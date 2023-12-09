@@ -10,6 +10,7 @@ import Foundation
 class HomeViewModel : ObservableObject {
     private let service : HomeService
 
+    @Published var showAlert = false
     @Published var isLoading : Bool = false
     @Published var amiibos : [AmiiboModel]?
     
@@ -23,7 +24,7 @@ class HomeViewModel : ObservableObject {
             self.amiibos = try await service.fetchAmiibos()
             self.isLoading = true
         } catch {
-            
+            self.showAlert = true
         }
     }
 }

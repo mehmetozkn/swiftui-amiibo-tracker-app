@@ -20,6 +20,9 @@ struct AppConstants {
         static let noSeries = "No Series"
         static let type = "Type"
         static let noType = "No Type"
+        static let error = "Hata"
+        static let tryAgain = "Lütfen tekrar deneyin"
+        static let okey = "Tamam"
         
     }
 }
