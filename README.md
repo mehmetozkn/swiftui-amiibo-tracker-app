@@ -15,3 +15,9 @@ SwiftUI Amiibo Tracker App with amiiboapi
 - Alamofire
 - REST API
 - MVVM Design Pattern
+
+### Screens
+
+<img width="300" alt="layeredstructure" src="https://github.com/mehmetozkn/swiftui-amiibo-tracker-app/assets/75026832/0963dd1d-66f2-4a3c-ae15-3e1cbe5aeda7">
+
+<img width="300" alt="layeredstructure" src="https://github.com/mehmetozkn/swiftui-amiibo-tracker-app/assets/75026832/af03a4e4-c390-40a3-8cbd-e7162f6b0d74">

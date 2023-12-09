@@ -8,16 +8,18 @@
 import Foundation
 
 struct AppConstants {
-    
-    struct Sizes {
-        
-    }
-    
-    
     struct Radius {
         static let cornerRadiusValue : CGFloat = 12
-
     }
     
-    
+    struct LocaleKeys {
+        static let name = "Name"
+        static let noName = "No Name"
+        static let amiibosTitle = "Amiibos"
+        static let amiibosSeries = "Amiibo Series"
+        static let noSeries = "No Series"
+        static let type = "Type"
+        static let noType = "No Type"
+        
+    }
 }

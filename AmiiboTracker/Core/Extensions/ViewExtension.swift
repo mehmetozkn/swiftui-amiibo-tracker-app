@@ -11,4 +11,12 @@ extension View {
     func getScreenBounds() -> CGRect {
         return UIScreen.main.bounds
     }
+    
+     var imageWidthSize: CGFloat {
+        get { getScreenBounds().width * 0.3 }
+    }
+
+     var imageHeightSize: CGFloat {
+        get { getScreenBounds().height * 0.2 }
+    }
 }

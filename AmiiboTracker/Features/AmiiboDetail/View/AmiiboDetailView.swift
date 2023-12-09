@@ -10,61 +10,52 @@ import SwiftUI
 struct AmiiboDetailView: View {
     @ObservedObject var viewModel = AmiiboViewModel(service: AmiiboDetailService())
     var amiibo: String
-    
-    private var imageWidthSize: CGFloat {
-        get { getScreenBounds().width * 0.4 }
-    }
-    
-    private var imageHeightSize: CGFloat {
-        get { getScreenBounds().height * 0.3 }
-    }
-    
+
     var body: some View {
         VStack {
             if viewModel.isLoading {
                 VStack {
                     AmiiboImageView(imageUrl: viewModel.amiibo?.first?.image ?? ""
-                                    ,width: imageWidthSize,height: imageHeightSize)
+                        , width: imageWidthSize, height: imageHeightSize)
                 }
-                
+
                 Spacer()
-                
+
                 VStack (alignment: .leading) {
                     HStack {
-                        Text("Name: ")
+                        Text("\(AppConstants.LocaleKeys.name): ")
                             .bold()
                             .font(.title2)
                             .foregroundStyle(.blue)
-                        
-                        Text(viewModel.amiibo?.first?.name ?? "No Name")
+
+                        Text(viewModel.amiibo?.first?.name ?? AppConstants.LocaleKeys.noName)
                             .bold()
                             .font(.title2)
 
                     }
-                    
+
                     HStack {
-                        Text("Amiibo Series: ")
+                        Text("\(AppConstants.LocaleKeys.amiibosSeries):")
                             .bold()
                             .font(.title2)
                             .foregroundStyle(.blue)
-                        
-                        Text(viewModel.amiibo?.first?.amiiboSeries ?? "No Series")
+
+                        Text(viewModel.amiibo?.first?.amiiboSeries ?? AppConstants.LocaleKeys.noSeries)
                             .bold()
                             .font(.title2)
 
                     }
-                    
+
                     HStack {
-                        Text("Type: ")
+                        Text("\(AppConstants.LocaleKeys.type): ")
                             .bold()
                             .font(.title2)
                             .foregroundStyle(.blue)
-                        
-                        Text(viewModel.amiibo?.first?.type ?? "No Type")
+
+                        Text(viewModel.amiibo?.first?.type ?? AppConstants.LocaleKeys.noType)
                             .bold()
                             .font(.title2)
                     }
-
                 }
                 Spacer()
 
@@ -72,8 +63,8 @@ struct AmiiboDetailView: View {
                 CircularProgressView()
             }
         }
-        .task {
-           await viewModel.getAmiibo(name: amiibo)
+            .task {
+            await viewModel.getAmiibo(name: amiibo)
         }
     }
 }
