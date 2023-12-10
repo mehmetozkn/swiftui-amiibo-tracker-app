@@ -10,7 +10,7 @@ import Foundation
 class HomeViewModel : ObservableObject {
     private let service : HomeService
 
-    @Published var showAlert = false
+    @Published var showAlert : Bool = false
     @Published var isLoading : Bool = false
     @Published var amiibos : [AmiiboModel]?
     

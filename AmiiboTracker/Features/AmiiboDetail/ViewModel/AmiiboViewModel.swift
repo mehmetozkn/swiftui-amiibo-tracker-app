@@ -10,7 +10,7 @@ import Foundation
 class AmiiboViewModel : ObservableObject {
     private let service: AmiiboDetailService
 
-    @Published var showAlert = false
+    @Published var showAlert : Bool = false
     @Published var isLoading: Bool = false
     @Published var amiibo: [AmiiboDetailModel]?
 
