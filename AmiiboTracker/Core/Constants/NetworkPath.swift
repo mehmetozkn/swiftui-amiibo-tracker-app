@@ -6,7 +6,7 @@
 //
 
 
-enum HttpPaths: String {
+enum NetworkPath: String {
     case getAll = "https://amiiboapi.com/api/amiibo/"
     case getCustomAmiibo = "https://amiiboapi.com/api/amiibo/?name="
 }

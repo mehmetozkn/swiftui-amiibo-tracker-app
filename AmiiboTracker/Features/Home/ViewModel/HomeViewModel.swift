@@ -8,23 +8,20 @@
 import Foundation
 
 class HomeViewModel : ObservableObject {
-    private let service : HomeService
 
     @Published var showAlert : Bool = false
     @Published var isLoading : Bool = false
     @Published var amiibos : [AmiiboModel]?
     
-    init(service: HomeService) {
-        self.service = service
-    }
-        
     @MainActor
-     func getAmiiboos() async {
+    func getAmiibos() async {
         do {
-            self.amiibos = try await service.fetchAmiibos()
-            self.isLoading = true
-        } catch {
-            self.showAlert = true
-        }
+            if let amiiobs = await NetworkManager.shared.fetch(path: .getAll, method: .get, type: AmiiboResponse.self) {
+                self.amiibos = amiiobs.amiibo
+                self.isLoading = true
+            } else {
+                self.showAlert = true
+            }
+        } 
     }
 }

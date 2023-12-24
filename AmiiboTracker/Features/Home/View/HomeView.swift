@@ -43,7 +43,7 @@ struct HomeView: View {
             }
         }
             .task {
-            await viewModel.getAmiiboos()
+            await viewModel.getAmiibos()
         }
             .alert(isPresented: Binding(
                 get: { viewModel.showAlert },
@@ -60,5 +60,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView(viewModel: HomeViewModel(service: HomeService()))
+    HomeView(viewModel: HomeViewModel())
 }

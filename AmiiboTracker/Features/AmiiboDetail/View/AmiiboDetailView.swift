@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AmiiboDetailView: View {
-    @ObservedObject var viewModel = AmiiboViewModel(service: AmiiboDetailService())
+    @ObservedObject var viewModel = AmiiboViewModel()
     var amiibo: String
 
     var body: some View {
@@ -64,7 +64,7 @@ struct AmiiboDetailView: View {
             }
         }
             .task {
-            await viewModel.getAmiibo(name: amiibo)
+            await viewModel.getAmiiboDetail(name: amiibo)
         }
             .alert(isPresented: Binding(
                 get: { viewModel.showAlert },
@@ -81,5 +81,5 @@ struct AmiiboDetailView: View {
 }
 
 #Preview {
-    AmiiboDetailView(viewModel: AmiiboViewModel(service: AmiiboDetailService()), amiibo: "sonic")
+    AmiiboDetailView(viewModel: AmiiboViewModel(), amiibo: "sonic")
 }
