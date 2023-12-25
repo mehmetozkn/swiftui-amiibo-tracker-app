@@ -13,6 +13,7 @@ SwiftUI Amiibo Tracker App with amiiboapi
 
 - Kingfisher
 - Alamofire
+- Generic Network Layer
 - REST API
 - MVVM Design Pattern
 
